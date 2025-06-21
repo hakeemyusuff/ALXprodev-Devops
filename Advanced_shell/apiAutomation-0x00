@@ -1,9 +1,9 @@
 #!/usr/bin/bash
 
-curl -o data.json https://pokeapi.co/api/v2/pokemon/25/
+curl -o data.json --fail -s https://pokeapi.co/api/v2/pokemon/1234k25/
 
 if [ $? -eq 0 ]; then
 	echo "Success"
 else
-	echo "Curl failed with exit code: $?" > error.txt
+	echo "Curl failed with exit code: $?" > errors.txt
 fi
