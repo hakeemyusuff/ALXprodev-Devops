@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-curl -o data.json --fail -s https://pokeapi.co/api/v2/pokemon/1234k25/
+curl -o data.json --fail -s https://pokeapi.co/api/v2/pokemon/25/
 
 if [ $? -eq 0 ]; then
 	echo "Success"
